@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+echo "starting orca server"
+
+docker run -d -p 9091:9091 quay.io/plotly/orca
+
 echo "updating data and graphs"
 
 ./update_data.py
