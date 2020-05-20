@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN apk add --update docker openrc
+RUN apk add --update docker openrc bash
 RUN rc-update add docker boot
 
 COPY . .
