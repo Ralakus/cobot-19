@@ -9,7 +9,7 @@ import os
 
 
 
-plotly.io.orca.config.executable = '/bin/orca'
+plotio.orca.config.executable = '/bin/orca'
 
 
 def render_barchart(title, names, dates, datas, colours, scale = 2, type = "linear"):
