@@ -2,4 +2,3 @@ discord-py
 plotly
 requests
 rapidfuzz
-shutil
