@@ -36,7 +36,7 @@ job "cobot-19" {
         image = "ralakus/cobot-19:latest"
 
         volumes = [
-          "/home/mikhail/services/cobot-19/:/",
+          "/home/mikhail/services/cobot-19/:/usr/src/app",
         ]
       }
 
