@@ -130,3 +130,5 @@ dmypy.json
 
 # Bot token
 token.txt
+data
+graphs
