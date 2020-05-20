@@ -3,8 +3,8 @@ FROM python:alpine
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
-RUN apk add --update docker openrc bash gcc g++ musl-dev linux-headers
-RUN rc-update add docker boot
+RUN apk add --update bash gcc g++ musl-dev linux-headers
+RUN curl -L https://github.com/plotly/orca/releases/download/v1.3.1/orca-1.3.1.AppImage -o /bin/orca
 
 RUN pip install --no-cache-dir -r requirements.txt
 
