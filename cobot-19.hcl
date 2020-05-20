@@ -37,7 +37,6 @@ job "cobot-19" {
 
         volumes = [
           "/home/mikhail/services/cobot-19/:/usr/src/app",
-          "/var/run/docker.sock:/var/run/docker.sock:rw",
         ]
       }
 
